@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movimientos</title>
+    <link rel="stylesheet" href="../css/movimiento.css">
+    <script type="module" src="../JS/guardian.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Movimientos</h1>
+        <nav>
+            <ul>
+                <li><a href="./dashboard.html">Balance</a></li>
+                <li><a href="./categorias.html">Categorias</a></li>
+                <li><a href="./movimiento.html">Movimientos</a></li>
+                <li><a href="./reportes.html">Reportes</a></li>
+                <li><button id="logout">Cerrar Sesión</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <form id="formMovimientos">
+            <label for="tipo">Tipo</label>
+            <select id="selectTipo">
+                <option value="compra">Gasto</option>
+                <option value="venta">Ganancia</option>
+            </select>
+
+
+            <label for="descripcion">Descripcion</label>
+            <input type="text" id="descripcion" />
+
+            <label for="importe">Importe ($)</label>
+            <input type="number" id="importe" />
+
+            <label for="fecha">Fecha</label>
+            <input type="date" id="fecha" />
+
+            <label for="categoria">Categoria</label>
+            <select id="categoria"></select>
+
+            <button type="submit" id="btnMovimiento">Guardar</button>
+            
+
+        </form>
+
+        <ul id="listaMovimientos"></ul>
+    </main>
+
+
+    <footer>
+        <p>&copy; 2025 Finanzas Pro</p>
+    </footer>
+
+    <script src="../js/movimientos.js"></script>
+    <script src="../js/cerrarSesion.js"></script>
+</body>
+
+</html>

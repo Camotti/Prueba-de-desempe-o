@@ -1,0 +1,93 @@
+{
+  "users": [
+    {
+      "id": "j01f",
+      "username": "fat",
+      "password": "123"
+    },
+    {
+      "id": "008",
+      "username": "ghetto",
+      "password": "678"
+    },
+    {
+      "id": "009",
+      "username": "carmelo",
+      "password": "1997"
+    }
+  ],
+  "categories": [
+    {
+      "nombre": "tecnologica",
+      "id": "007a"
+    },
+    {
+      "id": "48da",
+      "nombre": "comida"
+    },
+    {
+      "id": "51b9",
+      "nombre": "cartas"
+    },
+    {
+      "id": "ce65",
+      "nombre": "electrodomesticos"
+    },
+    {
+      "id": "a135",
+      "nombre": "detergentes"
+    },
+    {
+      "id": "bc47",
+      "nombre": "herramientas"
+    },
+    {
+      "id": "e533",
+      "nombre": "anime"
+    }
+  ],
+  "movimientos": [
+    {
+      "id": "0c88",
+      "tipo": "compra",
+      "descripcion": "hola",
+      "importe": 3000,
+      "fecha": "2025-07-26",
+      "categoria": "tecnologica"
+    },
+    {
+      "id": "60eb",
+      "tipo": "compra",
+      "descripcion": "hola",
+      "importe": 70000,
+      "fecha": "2025-07-26",
+      "categoria": "comida"
+    },
+    {
+      "id": "9027",
+      "tipo": "compra",
+      "descripcion": "computador",
+      "importe": 70000,
+      "fecha": "2025-07-25",
+      "categoria": "tecnologica"
+    },
+    {
+      "id": "c43d",
+      "tipo": "compra",
+      "descripcion": "camara",
+      "importe": 50000,
+      "fecha": "2025-07-28",
+      "categoria": "tecnologica"
+    },
+    {
+      "id": "f0d0",
+      "tipo": "venta",
+      "descripcion": "mangas de anime de Naruto",
+      "importe": 60000,
+      "fecha": "2025-07-17",
+      "categoria": "anime"
+    }
+  ],
+  "dashboard": [],
+  "reportes": []
+}

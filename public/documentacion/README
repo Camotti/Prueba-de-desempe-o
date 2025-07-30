@@ -1,0 +1,58 @@
+# Sistema Finanzas PRO
+
+This project permit to users manage them personal finance in simple form. The users can create categories, register movements between sales and buys and visualize dinamic reports with useful information.
+
+
+##  Functionalities
+
+-  **Basic authentication** Validate by (login).
+-  **Categories Management**: Create, edit and delete.
+-  **Register movements**: buys and sales.
+-  **Movements historial** In table.
+-  **Dinamic reports**:
+  - Category with more buys and sales.
+  - Product more bought and sell.
+  - Month with more activity.
+-  **Responsive design** adapted to movile devices, tablets and laptops screens.
+-  Friendlly and intuitive interface.
+
+
+##  Technologies used
+
+-  HTML semantic
+-  CSS  flex, styles, 
+-  JavaScript functions, async functions, await,fetch,DOM,
+-  JSON Server (to replicate a backend sistem)
+- NODE JS -v 22.17
+- CONSOLE (GOOGLE)
+- Visual Studio Code
+- Linux
+- GitHub
+
+## Instructions 
+
+- In the explorer content, select the archive 'finanzas pro' in the CAMOTTI'S repository 
+- In the archive menu , select the Download archive.
+- Open Visual Studio Code - file project carpet.
+- Install JSON server: 
+1. npm install json-server 
+2. npm run dev 
+3. In a new view ("+") npx json-server public/DataBase/data.json. 
+
+---------------------------------
+Coder
+Camilo Andrés Rodríguez Pisciotti
+Github: Camotti 
+Clan Malecón
+Barranquilla-Colombia
+camiropi97@gmail.com
+29/07/2025
+
+c© 2025 - Camilo Andrés Rodríguez Pisciotti 
+
+
+
+
+
+
+

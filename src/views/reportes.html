@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Reportes</title>
+  <link rel="stylesheet" href="../css/reportes.css">
+  <script src="../js/guardian.js"></script>
+</head>
+<body>
+
+  <header>
+    <h1>Reportes</h1>
+    <nav>
+      <ul>
+        <li><a href="./dashboard.html"></a>Balance</li>
+        <li><a href="./categorias.html">Categorías</a></li>
+        <li><a href="./movimiento.html">Movimientos</a></li>
+        <li><a href="./reportes.html">Reportes</a></li>
+        <li><button id="logout">Cerrar sesión</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="analisis-general">
+      <h2>Historial de Movimientos</h2>
+      <div class="tabla-responsive">
+        <table>
+          <thead>
+            <tr>
+              <th>Tipo</th>
+              <th>Descripción</th>
+              <th>Importe</th>
+              <th>Fecha</th>
+              <th>Categoría</th>
+            </tr>
+          </thead>
+          <tbody id="tablaReportes"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section>
+      <h2>Reportes</h2>
+
+      <p><strong>Categoría con mayor ganancia:</strong> <span id="categoriaMasVentas">Cargando...</span></p>
+      <p><strong>Categoría con mayor gasto:</strong> <span id="categoriaMasCompras">Cargando...</span></p>
+      <p><strong>Producto más vendido:</strong> <span id="productoMasVendido">Cargando...</span></p>
+      <p><strong>Producto más comprado:</strong> <span id="productoMasComprado">Cargando...</span></p>
+      <p><strong>Mes con mayor ganancia:</strong> <span id="mesMasVentas">Cargando...</span></p>
+      <p><strong>Mes con mayor gasto:</strong> <span id="mesConMasCompras">Cargando...</span></p>
+
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Finanzas Pro</p>
+  </footer>
+
+  <script type="module" src="../js/reportes.js"></script>
+  <script src="../js/cerrarSesion.js"></script>
+</body>
+</html>

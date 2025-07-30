@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion de Operaciones</title>
+    <link rel="stylesheet" href="../css/dashboard.css">  
+    <script type="module" src="../JS/guardian.js"></script> <!--Guardian script-->
+</head>
+
+<body>
+
+
+    <header>
+        <h1>Gestion de Operaciones</h1>
+        <h2 id="bienvenida">Bienvenido Usuario</h2>
+        <nav>
+            <ul>
+
+                <li><a href="./dashboard.html">Balance</a></li>
+                <li><a href="./categorias.html">Categorías</a></li>
+                <li><a href="./movimiento.html">Movimientos</a></li>
+                <li><a href="./reportes.html">Reportes</a></li>
+                <li><button id="logout">Cerrar Sesión</button></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+        <section class="tarjetas">
+
+            <div class="carta">
+                <h3>Total Ingresos</h3>
+                <p id="ingresos">$0</p>
+            </div>
+
+            <div class="carta">
+                <h3>Total Gastos</h3>
+                <p id="gastos">$0</p>
+            </div>
+
+            <div class="carta">
+                <h3>Balance</h3>
+                <p id="balance">$0</p>
+            </div>
+
+            <div class="carta">
+                <h3>Último Movimiento</h3>
+                <p id="ultimoMovimiento">Sin datos</p>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Finanzas Pro</p>
+    </footer>
+
+
+    <!--script del dashboard-->
+    <script type="module">
+        const user = JSON.parse(localStorage.getItem("currentUser")); //search for a user saved in the browser when do the Login
+        if (user) {
+            document.getElementById("bienvenida").textContent = `Bienvenido, ${user.username}`
+        }
+    </script>
+
+    <script type="module" src="../js/dashboard.js"></script> <!---->
+    <script src="../js/cerrarSesion.js"></script>   <!--Logout script-->
+</body>
+
+</html>

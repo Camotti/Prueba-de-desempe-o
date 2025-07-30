@@ -1,0 +1,171 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+html, body{
+    height: 100%;
+}
+
+header{
+    background-color: #13543E;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+h1{
+    font-size: 30px;
+    text-align: center;
+}
+
+header ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    padding: 0;
+}
+
+header a, header button{
+    color: white;
+    text-decoration: none;
+    background: transparent;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+header a:hover,
+header button:hover {
+  text-decoration: underline;
+}
+
+main {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  margin: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+form label {
+  font-weight: bold;
+}
+
+form input,
+form select,
+form button {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  background-color: #13543E;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+form button:hover {
+  background-color: #333;
+}
+
+#listaMovimientos {
+  margin-top: 20px;
+  list-style: none;
+  padding: 0;
+}
+
+footer {
+  margin-top: auto;
+  text-align: center;
+  font-size: 14px;
+  color: #777;
+  background-color: #13543E;
+  color: white;
+  padding: 10px;
+  width: 100%;
+}
+
+#listaMovimientos li {
+  background-color: #fff;
+  padding: 12px;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+#listaMovimientos li span {
+  display: block;
+  font-size: 14px;
+  color: #444;
+}
+
+#listaMovimientos li button {
+  margin-right: 10px;
+  padding: 6px 10px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#listaMovimientos li button:hover {
+  background-color: purple;
+}
+
+#listaMovimientos li button.btn-eliminar {
+  background-color: black;
+}
+
+#listaMovimientos li button.btn-eliminar:hover {
+  background-color: #a71d2a;
+}
+
+
+
+@media (max-width: 768px) {
+  header ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header h1 {
+    font-size: 24px;
+  }
+
+  form {
+    gap: 10px;
+  }
+
+  form input,
+  form select,
+  form button {
+    font-size: 14px;
+  }
+}

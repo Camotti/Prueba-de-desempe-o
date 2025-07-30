@@ -1,0 +1,102 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(150deg, #227, #58d68d );
+    height: 100vh;
+     font-family: Arial, sans-serif;
+}
+
+.contenedor-login{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 480px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0, 0.2);
+}
+
+.contenedor-login h1{
+    text-align: center;
+    padding: 0 0 20px 0;
+    border-bottom: 1px solid silver;
+    color: #333;
+}
+
+form {
+  padding: 0 40px 20px;
+  box-sizing: border-box;
+}
+
+form div {
+  margin-bottom: 20px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+form input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+}
+
+form input:focus {
+  border-color: #6c3483;
+}
+
+.olvido {
+  text-align: center;
+  font-size: 14px;
+  margin-top: -10px;
+}
+
+.olvido a {
+  color: #6c3483;
+  text-decoration: none;
+  
+}
+
+.olvido a:hover {
+  text-decoration: underline;
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  background-color: #58d68d ;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: green;
+}
+
+.registrarse {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.registrarse a {
+  color: green;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.registrarse a:hover {
+  text-decoration: #58d68d ;
+}
